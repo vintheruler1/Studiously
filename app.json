@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "react-native-tailwindcss",
+    "slug": "react-native-tailwindcss",
+    "version": "1.0.0",
+    "sdkVersion": "48.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.studently.app"
+    },
+    "android": {
+      "package": "com.studently.app"
+    }
+  }
+}
