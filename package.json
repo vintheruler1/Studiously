@@ -1,5 +1,5 @@
 {
-  "name": "react-native-tailwindcss",
+  "name": "studently",
   "version": "1.0.0",
   "scripts": {
     "start": "expo start --dev-client",

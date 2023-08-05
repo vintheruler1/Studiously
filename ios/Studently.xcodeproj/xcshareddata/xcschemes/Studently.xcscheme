@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "reactnativetailwindcss.app"
-               BlueprintName = "reactnativetailwindcss"
-               ReferencedContainer = "container:reactnativetailwindcss.xcodeproj">
+               BuildableName = "Studently.app"
+               BlueprintName = "Studently"
+               ReferencedContainer = "container:Studently.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "reactnativetailwindcssTests.xctest"
-               BlueprintName = "reactnativetailwindcssTests"
-               ReferencedContainer = "container:reactnativetailwindcss.xcodeproj">
+               BuildableName = "StudentlyTests.xctest"
+               BlueprintName = "StudentlyTests"
+               ReferencedContainer = "container:Studently.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "reactnativetailwindcss.app"
-            BlueprintName = "reactnativetailwindcss"
-            ReferencedContainer = "container:reactnativetailwindcss.xcodeproj">
+            BuildableName = "Studently.app"
+            BlueprintName = "Studently"
+            ReferencedContainer = "container:Studently.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "reactnativetailwindcss.app"
-            BlueprintName = "reactnativetailwindcss"
-            ReferencedContainer = "container:reactnativetailwindcss.xcodeproj">
+            BuildableName = "Studently.app"
+            BlueprintName = "Studently"
+            ReferencedContainer = "container:Studently.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
