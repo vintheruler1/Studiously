@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import TextWidget from './TextWidget';
 import Clock from 'react-live-clock'; 
+import Planner from './Planner';
 
 const Home = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -20,7 +21,7 @@ const Home = () => {
   
 
   return (
-    <div className={`flex flex-col min-h-screen ${isDarkMode ? 'dark bg-white' : 'bg-black'}`}>
+    <div className={`flex flex-col min-h-screen ${isDarkMode ? 'dark bg-white' : 'bg-blue-400'}`}>
       <Clock 
           format={'h:mm:ssa'} 
           style={{fontSize: '1.5em'}} 
@@ -30,10 +31,11 @@ const Home = () => {
         <div className='flex gap-4'>
           <div className={`border border-blue-300 rounded-lg p-4 shadow-md ${isDarkMode ? 'text-black' : 'text-white'}`}>
             <p>Made by Students, for Students</p>
-            <img src="./studiously.png" alt="logo" />
+            <img src="https://github.com/vintheruler1/Studiously/blob/main/src/app/studiously.png?raw=true" alt="logo" />
           </div>
         </div>
           <TextWidget/>
+          <Planner className="container mx-auto mt-8"/>
           {/* <Player/> */}
           
       </div>
