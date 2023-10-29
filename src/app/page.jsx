@@ -1,9 +1,8 @@
 'use client'
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import TextWidget from './TextWidget';
 import Clock from 'react-live-clock'; 
-// import Player from './player'
 
 const Home = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -12,6 +11,12 @@ const Home = () => {
     setIsDarkMode((prevMode) => !prevMode);
     document.documentElement.classList.toggle('dark');
   };
+
+  const [isClient, setIsClient] = useState(false)
+ 
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
   
 
   return (
@@ -25,6 +30,7 @@ const Home = () => {
         <div className='flex gap-4'>
           <div className={`border border-blue-300 rounded-lg p-4 shadow-md ${isDarkMode ? 'text-black' : 'text-white'}`}>
             <p>Made by Students, for Students</p>
+            <img src="./studiously.png" alt="logo" />
           </div>
         </div>
           <TextWidget/>
