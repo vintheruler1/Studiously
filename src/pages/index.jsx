@@ -31,7 +31,7 @@ const Home = () => {
           <div className={`border border-blue-300 rounded-lg p-4 shadow-md text-center text-xl ${isDarkMode ? 'text-black' : 'text-white'}`}>
             {/* <p>Made by Students, for Students</p> */}
             <p className='text-lg'>Your all-in-one homework browser.</p>
-            <img src="https://github.com/vintheruler1/Studiously/blob/main/public/studiously.png?raw=true" width={250} height={250} alt="logo" />
+            <img src="https://github.com/vintheruler1/Studiously/blob/main/public/studiously.png?raw=true" width={260} height={260} alt="logo" />
           </div>
         </div>
       </div>
