@@ -1,6 +1,6 @@
-#Studiously
+# Studiously
 
-##Welcome to Studiously, your all-in-one homework browser!
+## Welcome to Studiously, your all-in-one homework browser!
 
 ## Installation
 1. Clone the repository: git clone `https://github.com/vintheruler1/Studiously.git`
