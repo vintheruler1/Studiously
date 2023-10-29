@@ -16,4 +16,4 @@
 Contributions are welcome! Please open an issue or pull request for any changes.
 
 ## License
-This project is licensed under the AGPL v3 License - see the [LICENSE](https://github.com/vintheruler1/Studiously/blob/main/LICENSE)https://github.com/vintheruler1/Studiously/blob/main/LICENSE file for details.
+This project is licensed under the AGPL v3 License - see the [LICENSE](https://github.com/vintheruler1/Studiously/blob/main/LICENSE) file for details.
