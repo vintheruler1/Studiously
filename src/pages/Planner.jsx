@@ -21,7 +21,7 @@ const Home = () => {
     <div className={`flex flex-col min-h-screen ${isDarkMode ? 'dark bg-white' : 'bg-blue-400'}`}>
       <Navbar />
       <Clock format={'h:mm:ssa'} style={{ fontSize: '1.5em' }} ticking={true} className='text-white text-center my-2' />
-      <h1 className={`text-4xl mb-4 font-bold text-center my-5 align-top ${isDarkMode ? 'text-black' : 'text-white'}`}>
+      <h1 className={`text-5xl mb-4 font-bold text-center my-5 align-top ${isDarkMode ? 'text-black' : 'text-white'}`}>
         Planner
       </h1>
       <div className="flex-grow flex flex-col items-center justify-center">
@@ -29,7 +29,7 @@ const Home = () => {
           <Planner />
         </div>
       </div>
-      <footer className={`text-sm align-middle text-center text-gray-500 ${isDarkMode ? 'dark:text-gray-400' : ''}`}>
+      <footer className={`text-sm align-middle text-center text-white`}>
         &copy; 2023 Studently Inc. All Rights Reserved.
       </footer>
     </div>

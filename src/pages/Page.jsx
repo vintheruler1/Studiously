@@ -23,8 +23,8 @@ const Home = () => {
       <Navbar className="text-center items-center"/>
       <Clock format={'h:mm:ssa'} style={{ fontSize: '1.5em' }} ticking={true} className='text-white text-center my-2' />
       <div className="flex-grow flex flex-col items-center justify-center">
-        <h1 className={`text-4xl mb-4 font-bold  align-top ${isDarkMode ? 'text-black' : 'text-white'}`}>
-          Welcome to Studently
+        <h1 className={`text-5xl mb-4 font-bold  align-top ${isDarkMode ? 'text-black' : 'text-white'}`}>
+          Welcome to Studiously
         </h1>
         <div className='flex gap-4'>
           <div className={`border border-blue-300 rounded-lg p-4 shadow-md ${isDarkMode ? 'text-black' : 'text-white'}`}>
@@ -36,7 +36,7 @@ const Home = () => {
         <Planner className="container mx-auto mt-8" /> */}
       </div>
       <footer className={`text-sm align-middle text-center text-gray-500 ${isDarkMode ? 'dark:text-gray-400' : ''}`}>
-        &copy; 2023 Studently Inc. All Rights Reserved.
+        &copy; 2023 Studiously Inc. All Rights Reserved.
       </footer>
     </div>
   );

@@ -14,6 +14,9 @@ const Navbar = () => {
         <Link legacyBehavior href="./Resources">
           <a className="text-white text-xl hover:bg-blue-500 hover:text-black rounded-md px-2 py-1">Resources</a>
         </Link>
+        <Link legacyBehavior href="./plugins">
+          <a className="text-white text-xl hover:bg-blue-500 hover:text-black rounded-md px-2 py-1">Plugins</a>
+        </Link>
       </div>
     </div>
   );
