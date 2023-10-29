@@ -19,7 +19,7 @@ const Home = () => {
   // }, []);
 
   return (
-    
+    <title>Studiously</title>
     <div className={`flex flex-col min-h-screen ${isDarkMode ? 'dark bg-white' : 'bg-blue-400'}`}>
       <Navbar />
       <Clock format={'h:mm:ssa'} style={{ fontSize: '1.5em' }} ticking={true} className='text-white text-center my-2' />
