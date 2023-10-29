@@ -25,11 +25,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/Planner.js"
     ],
-    "/Resources": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/Resources.js"
-    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
