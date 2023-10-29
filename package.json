@@ -1,5 +1,5 @@
 {
-  "name": "studently",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,27 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "file-loader": "^6.2.0",
+    "@react-icons/all-files": "^4.1.0",
+    "eslint": "8.37.0",
+    "eslint-config-next": "13.3.0",
     "js-cookie": "^3.0.5",
-    "next": "^14.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18",
-    "react-icons": "^4.11.0",
-    "react-live-clock": "^6.1.16",
-    "react-notifications": "^1.7.4",
-    "react-scripts": "^5.0.1",
-    "use-sound": "^4.0.1"
+    "js-cookies": "^1.0.4",
+    "next": "13.3.0",
+    "react": "18.2.0",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "react-live-clock": "^6.1.16"
   },
   "devDependencies": {
-    "autoprefixer": "^10",
-    "css-loader": "^6.8.1",
-    "eslint": "^8",
-    "eslint-config-next": "13.5.6",
-    "postcss": "^8",
-    "sass": "^1.69.4",
-    "sass-loader": "^13.3.2",
-    "style-loader": "^3.3.3",
-    "tailwindcss": "^3",
-    "webpack": "^5.89.0"
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.1"
   }
 }
