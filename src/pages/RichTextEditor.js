@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import ContentEditable from 'react-contenteditable';
+import Cookies from 'js-cookie';
 
 const RichTextEditor = () => {
   const [content, setContent] = useState(
-    localStorage.getItem('editorContent') || '<p>Start typing here...</p>'
+    Cookies.get('editorContent') || '<p>Start typing here...</p>'
   );
   const [copySuccess, setCopySuccess] = useState(false);
 
   useEffect(() => {
     // Automatically save the content in cookies when it changes
-    localStorage.setItem('editorContent', content);
+    Cookies.set('editorContent', content, { expires: 7 }); // Store for 7 days
   }, [content]);
 
   const handleChange = (e) => {
