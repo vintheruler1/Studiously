@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Clock from 'react-live-clock';
 import Navbar from './NavBar';
 
+import { Analytics } from '@vercel/analytics/react';
+
 const Home = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -13,6 +15,7 @@ const Home = () => {
   return (
     <div className={`flex flex-col min-h-screen ${isDarkMode ? 'dark bg-white' : 'bg-blue-400'}`}>
       <title>Studiously</title>
+      <Analytics />
       <Navbar />
       <Clock format={'h:mm:ssa'} style={{ fontSize: '1.5em' }} ticking={true} className='text-white text-center my-2' />
       <h1 className={`text-5xl mb-4 font-bold text-center my-6 py-6 ${isDarkMode ? 'text-black' : 'text-white'}`}>
