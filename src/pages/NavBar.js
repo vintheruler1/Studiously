@@ -3,20 +3,24 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <div className="bg-blue-400 p-4 flex justify-center items-center">
-      <div className="flex items-center text-center space-x-4">
-        <Link legacyBehavior href="/">
-          <a className="text-white text-xl hover:bg-blue-500 hover:text-black rounded-md px-2 py-1">Home</a>
-        </Link>
-        <Link legacyBehavior href="./Planner">
-          <a className="text-white text-xl hover:bg-blue-500 hover:text-black rounded-md px-2 py-1">Planner</a>
-        </Link>
-        <Link legacyBehavior href="./Resources">
-          <a className="text-white text-xl hover:bg-blue-500 hover:text-black rounded-md px-2 py-1">Resources</a>
-        </Link>
-        <Link legacyBehavior href="./plugins">
-          <a className="text-white text-xl hover:bg-blue-500 hover:text-black rounded-md px-2 py-1">Plugins</a>
-        </Link>
+    <div className="bg-blue-400 p-4">
+      <div className="flex justify-between items-center">
+        <div>
+          <Link legacyBehavior href="/">
+            <a className="text-white text-lg mt-2 text-center rounded-full px-6 py-3 bg-blue-500 hover:bg-blue-600 hover:text-black">Studiously</a>
+          </Link>
+        </div>
+        <div className="flex items-center space-x-4">
+          <Link legacyBehavior href="/Planner">
+            <a className="text-white text-lg mt-2 text-center rounded-full px-6 py-3 bg-blue-500 hover:bg-blue-600 hover:text-black">Planner</a>
+          </Link>
+          <Link legacyBehavior href="/Resources">
+            <a className="text-white text-lg mt-2 text-center rounded-full px-6 py-3 bg-blue-500 hover:bg-blue-600 hover:text-black">Resources</a>
+          </Link>
+          <Link legacyBehavior href="/plugins">
+            <a className="text-white text-lg mt-2 text-center rounded-full px-6 py-3 bg-blue-500 hover:bg-blue-600 hover:text-black">Tools</a>
+          </Link>
+        </div>
       </div>
     </div>
   );

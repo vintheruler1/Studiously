@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Clock from 'react-live-clock';
 import Navbar from './NavBar';
-import Planner from './planner_div';
-import Weather from './Weather';
+import RichTextEditor from './RichTextEditor';
 
 const Home = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -23,12 +22,11 @@ const Home = () => {
       <Navbar />
       <Clock format={'h:mm:ssa'} style={{ fontSize: '1.5em' }} ticking={true} className='text-white text-center my-2' />
       <h1 className={`text-5xl mb-4 font-bold text-center my-6 py-6 ${isDarkMode ? 'text-black' : 'text-white'}`}>
-        Planner
+        Text Editor
       </h1>
       <div className="flex-grow flex flex-col items-center justify-center">
         <div className='w-3/4 my-2 flex flex-wrap justify-center'> {/* Use flex-wrap and justify-center */}
-          <Planner />
-          <Weather />
+            <RichTextEditor/>
         </div>
       </div>
       <footer className={`text-sm align-middle text-center text-white`}>

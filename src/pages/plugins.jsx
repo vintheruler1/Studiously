@@ -1,11 +1,7 @@
-'use client'
-
 import React, { useState, useEffect } from 'react';
 import Clock from 'react-live-clock';
 import Navbar from './NavBar';
-import TextWidget from './HyperBold';
-import MindMap from './MindMap';
-import CitationGenerator from './CitationGenerator';
+import Link from 'next/link';
 
 const Home = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -23,20 +19,34 @@ const Home = () => {
 
   return (
     <div className={`flex flex-col min-h-screen ${isDarkMode ? 'dark bg-white' : 'bg-blue-400'}`}>
-      <Navbar className="text-center items-center"/>
-      <Clock format={'h:mm:ssa'} style={{ fontSize: '1.5em' }} ticking={true} className='text-white text-center my-2' />
-      <h1 className={`text-5xl mb-4 font-bold text-center ${isDarkMode ? 'text-black' : 'text-white'}`}>
-            Plugins
-        </h1>
-      <div className="flex-grow flex flex-col text-center align-text-top justify-center">
-        
-        <div className='flex gap-4 '>
-            <TextWidget />
-            <CitationGenerator/>
-        </div>
+      <Navbar className="text-center items-center" />
+      {isClient && (
+        <Clock format={'h:mm:ssa'} style={{ fontSize: '1.5em' }} ticking={true} className='text-white text-center my-2' />
+      )}
+      <h1 className={`text-5xl mb-4 font-bold text-center my-6 py-6 ${isDarkMode ? 'text-black' : 'text-white'}`}>
+        Tools
+      </h1>
+      <div className="flex-grow flex flex-col items-center justify-center mt-2">
+        <Link legacyBehavior href="/Hyperbolder">
+          <a className="text-white text-lg text-center rounded-full px-6 py-3 bg-blue-500 hover:bg-blue-600 hover:text-black">
+            Hyperbolder
+          </a>
+        </Link>
+        <Link legacyBehavior href="/RichTextEdit">
+          <a className="text-white text-lg text-center rounded-full px-6 py-3 bg-blue-500 hover:bg-blue-600 hover:text-black mt-2">
+            Rich Text Editor
+          </a>
+        </Link>
       </div>
-      <footer className={`text-sm align-middle text-center text-white ${isDarkMode ? 'text-white' : ''}`}>
-        &copy; 2023 Studently Inc. All Rights Reserved.
+      <footer className={`text-sm align-middle text-center text-white`}>
+        &copy; 2023 Studiously Inc. All Rights Reserved |{' '}
+        <a href="/AboutUs" className="text-white hover:underline">
+          About Us
+        </a>{' '}
+        |{' '}
+        <a href="/terms-and-conditions" className="text-white hover:underline">
+          Terms and Conditions
+        </a>
       </footer>
     </div>
   );

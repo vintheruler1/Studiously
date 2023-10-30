@@ -18,7 +18,7 @@ const TextWidget = () => {
             <span className="text-blue-600"> {word.slice(0, 2)}</span>
             <span className="font-normal text-white">{word.slice(2)}</span>&nbsp;
           </span>
-        );ackgr
+        );
       }
       return (
         <span key={index} className="font-extrabold">
@@ -30,7 +30,7 @@ const TextWidget = () => {
   };
 
   return (
-    <div className="border p-4 rounded-lg mb-4">
+    <div className="border p-4 rounded-lg mb-4 mx-auto" style={{ maxWidth: '75%' }}>
       <div className="max-w-lg mx-auto">
         <h1 className='text-4xl font-bold my-2 text-white text-center'>HyperBold</h1>
         <textarea
