@@ -17,7 +17,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className={`min-h-screen ${isDarkMode ? 'dark bg-white' : 'bg-blue-400'}`}>
+    <div className={`min-h-screen ${isDarkMode ? 'dark bg-white' : 'bg-gradient-to-b from-blue-400 to-blue-600'}`}>
       <title>Resources | Studiously</title>
       <Navbar />
       <div className="flex flex-col items-center justify-center h-full">

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <div className="bg-blue-400 p-4">
+    <div className="to-blue-600 p-4">
       <div className="flex justify-between items-center">
         <div>
           <Link legacyBehavior href="/">
