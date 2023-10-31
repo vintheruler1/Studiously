@@ -25,7 +25,7 @@ const Home = () => {
         Hyper Bold
       </h1>
       <div className="flex-grow flex flex-col items-center justify-center">
-        <div className='w-3/4 my-2 flex flex-wrap justify-center'> {/* Use flex-wrap and justify-center */}
+        <div className='w-full my-2 flex flex-wrap justify-center'> 
             <HyperBold/>
         </div>
       </div>

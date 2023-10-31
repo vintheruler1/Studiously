@@ -74,7 +74,7 @@ const PomodoroTimer = () => {
           } text-white px-6 py-3 rounded-lg hover:bg-blue-600`}
           onClick={isBreak ? resetTimer : toggleTimer}
         >
-          {isBreak ? 'End Break' : isRunning ? 'Pause' : 'Start'}
+          {isBreak ? 'End Break' : isRunning ? 'Pause' : 'Start/Resume'}
         </button>
         {isRunning || isBreak ? null : (
           <button

@@ -45,38 +45,38 @@ body {
 }
 
 .shape-blob {
-  background: #4aa4ff; /* Change color to a nice blue */
-  height: 10%; /* Adjust the relative height */
-  width: 10%; /* Adjust the relative width */
+  background: #4aa4ff; 
+  height: 10%; 
+  width: 10%; 
   border-radius: 30% 50% 20% 40%;
   animation:
     transform 20s ease-in-out infinite both alternate,
     movement_one 40s ease-in-out infinite both;
   opacity: 0.5;
   position: absolute;
-  left: 80%; /* Adjust the left value */
-  top: 80%; /* Adjust the top value */
-  pointer-events: none; /* Add this line to make blobs non-interactive */
+  left: 80%;
+  top: 80%; 
+  pointer-events: none; 
 }
 
 .shape-blob.one {
-  height: 15%; /* Adjust the relative height */
-  width: 15%; /* Adjust the relative width */
-  left: -5%; /* Adjust the left value */
-  top: -10%; /* Adjust the top value */
+  height: 15%; 
+  width: 15%; 
+  left: -5%; 
+  top: -10%;
   transform: rotate(-180deg);
   animation: transform 30s ease-in-out infinite both alternate, movement_two 60s ease-in-out infinite both;
-  pointer-events: none; /* Add this line to make blobs non-interactive */
+  pointer-events: none;
 }
 
 .shape-blob.two {
-  height: 12%; /* Adjust the relative height */
-  width: 12%; /* Adjust the relative width */
-  left: 60%; /* Adjust the left value */
-  top: -10%; /* Adjust the top value */
+  height: 12%; 
+  width: 12%; 
+  left: 60%; 
+  top: -10%; 
   transform: rotate(-180deg);
   animation: transform 30s ease-in-out infinite both alternate, movement_two 60s ease-in-out infinite both;
-  pointer-events: none; /* Add this line to make blobs non-interactive */
+  pointer-events: none; 
 }
 
 @keyframes transform {
@@ -101,10 +101,6 @@ body {
 }
 
 h1 {
-  /* font-family: 'Playfair Display', serif; */
-  /* font-size: 5em; */
-  /* letter-spacing: 2px; */
-  /* font-weight: 900; */
   color: white;
   line-height: .9em;
   position: relative;
@@ -138,7 +134,7 @@ h1 {
   height: 100%; 
   background: #0040ff;
   z-index: 10;
-  transform-origin: bottom;
+  transform-origin: top;
 }  
 
 .slide-out {
@@ -149,5 +145,5 @@ h1 {
   height: 100%;
   background: #0040ff;
   z-index: 10;
-  transform-origin: top;
+  transform-origin: bottom;
 } 
