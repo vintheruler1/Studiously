@@ -4,6 +4,7 @@ import Navbar from './NavBar';
 const TermsAndConditions = ({ isDarkMode }) => {
   return (
     <div className={`flex flex-col items-center min-h-screen ${isDarkMode ? 'dark bg-white' : 'bg-blue-400'}`}>
+      <title>TAC | Studiously</title>
       <Navbar />
       <div className="text-center my-2">
         {/* Your page title or header here */}

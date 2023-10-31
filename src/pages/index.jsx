@@ -14,6 +14,7 @@ const Home = () => {
 
   return (
     <div className={`flex flex-col min-h-screen ${isDarkMode ? 'dark bg-white' : 'bg-blue-400'}`}>
+      <link rel="icon" href="/favicon.ico" sizes="any" />
       <title>Studiously</title>
       <Analytics />
       <Navbar />

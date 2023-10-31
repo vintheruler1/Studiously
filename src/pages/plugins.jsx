@@ -19,6 +19,7 @@ const Home = () => {
 
   return (
     <div className={`flex flex-col min-h-screen ${isDarkMode ? 'dark bg-white' : 'bg-blue-400'}`}>
+      <title>Tools | Studiously</title>
       <Navbar className="text-center items-center" />
       {isClient && (
         <Clock format={'h:mm:ssa'} style={{ fontSize: '1.5em' }} ticking={true} className='text-white text-center my-2' />
@@ -35,6 +36,11 @@ const Home = () => {
         <Link legacyBehavior href="/RichTextEdit">
           <a className="text-white text-lg text-center rounded-full px-6 py-3 bg-blue-500 hover:bg-blue-600 hover:text-black mt-2">
             Rich Text Editor
+          </a>
+        </Link>
+        <Link legacyBehavior href="/Pomodoro">
+          <a className="text-white text-lg text-center rounded-full px-6 py-3 bg-blue-500 hover:bg-blue-600 hover:text-black mt-2">
+            Pomodoro Timer
           </a>
         </Link>
       </div>
