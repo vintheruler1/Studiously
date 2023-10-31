@@ -1,4 +1,4 @@
-
+add <title> to each page
 
 Combo of “studently” and “Website to assist w homework” (tbh idk how many features we can fit in but ig the more the more chances of winning)
 Main dev stuff = html+css or react(basically html) and tailwindcss (css but easier)
