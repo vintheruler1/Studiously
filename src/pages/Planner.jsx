@@ -23,6 +23,9 @@ const Home = () => {
       <title>Planner | Studiously</title>
       <Navbar />
       <Clock format={'h:mm:ssa'} style={{ fontSize: '1.5em' }} ticking={true} className='text-white text-center my-2' />
+      <div class="shape-blob"></div>
+	<div class="shape-blob one"></div>
+	<div class="shape-blob two"></div>
       <h1 className={`text-5xl mb-4 font-bold text-center my-6 py-6 ${isDarkMode ? 'text-black' : 'text-white'}`}>
         Planner
       </h1>

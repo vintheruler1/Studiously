@@ -21,6 +21,9 @@ const Home = () => {
     <div className={`flex flex-col min-h-screen ${isDarkMode ? 'dark bg-white' : 'bg-gradient-to-b from-blue-400 to-blue-600'}`}>
       <title>Tools | Studiously</title>
       <Navbar className="text-center items-center" />
+      <div class="shape-blob"></div>
+	<div class="shape-blob one"></div>
+	<div class="shape-blob two"></div>
       {isClient && (
         <Clock format={'h:mm:ssa'} style={{ fontSize: '1.5em' }} ticking={true} className='text-white text-center my-2' />
       )}

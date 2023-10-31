@@ -20,6 +20,9 @@ const Home = () => {
     <div className={`min-h-screen ${isDarkMode ? 'dark bg-white' : 'bg-gradient-to-b from-blue-400 to-blue-600'}`}>
       <title>Resources | Studiously</title>
       <Navbar />
+      <div class="shape-blob"></div>
+	<div class="shape-blob one"></div>
+	<div class="shape-blob two"></div>
       <div className="flex flex-col items-center justify-center h-full">
         <div className="text-center my-2">
           <Clock format={'h:mm:ssa'} style={{ fontSize: '1.5em' }} ticking={true} className='text-white' />

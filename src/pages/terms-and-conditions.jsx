@@ -3,9 +3,12 @@ import Navbar from './NavBar';
 
 const TermsAndConditions = ({ isDarkMode }) => {
   return (
-    <div className={`flex flex-col items-center min-h-screen ${isDarkMode ? 'dark bg-white' : 'bg-gradient-to-b from-blue-400 to-blue-600'}`}>
+    <div className={`min-h-screen ${isDarkMode ? 'dark bg-white' : 'bg-gradient-to-b from-blue-400 to-blue-600'}`} style={{ display: 'flex', flexDirection: 'column' }}>
       <title>TAC | Studiously</title>
       <Navbar />
+      <div className="shape-blob"></div>
+      <div className="shape-blob one"></div>
+      <div className="shape-blob two"></div>
       <div className="text-center my-2">
         {/* Your page title or header here */}
         <h1 className={`text-5xl mb-4 font-bold text-center my-6 py-6 ${isDarkMode ? 'text-white' : 'text-white'}`}>
@@ -27,7 +30,7 @@ const TermsAndConditions = ({ isDarkMode }) => {
         </div>
       </div>
 
-      <footer className={`text-sm align-middle text-center text-white`}>
+      <footer className={`text-sm align-middle text-center text-white mt-auto`}>
         &copy; 2023 Studiously Inc. All Rights Reserved |{' '}
         <a href="/AboutUs" className="text-white hover:underline">About Us</a> |{' '}
         <a href="/terms-and-conditions" className="text-white hover:underline">Terms and Conditions</a>
