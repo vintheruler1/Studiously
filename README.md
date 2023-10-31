@@ -8,7 +8,7 @@
 3. Install dependencies: `npm install`
 
 ## Usage
-1. Start the development server: `npm start`
+1. Start the development server: `npm start dev`
 2. Open `http://localhost:3000` in your browser to view the app.
    
 ## Contributing
