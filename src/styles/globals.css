@@ -22,91 +22,110 @@ a {
 * {
   box-sizing: border-box;
 }
+
 @font-face {
   font-family: "burtons";
   src: url("../../public/Burtons.otf");
 }
 
 body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-	background: #0A2463;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-	position: relative;
-  }
-  
-  .shape-blob {
-	background: #4aa4ff; /* Change color to a nice blue */
-	height: 200px;
-	width: 200px;
-	border-radius: 30% 50% 20% 40%;
-	animation:
-	  transform 20s ease-in-out infinite both alternate,
-	  movement_one 40s ease-in-out infinite both;
-	opacity: 0.5;
-	position: absolute;
-	left: 80%; /* Adjust the left value */
-	top: 80%; /* Adjust the top value */
-	pointer-events: none; /* Add this line to make blobs non-interactive */
-  }
-  
-  .shape-blob.one {
-	height: 500px;
-	width: 500px;
-	left: -250px; /* Adjust the left value */
-	top: -100px; /* Adjust the top value */
-	transform: rotate(-180deg);
-	animation: transform 30s ease-in-out infinite both alternate, movement_two 60s ease-in-out infinite both;
-	pointer-events: none; /* Add this line to make blobs non-interactive */
-  }
-  
-  .shape-blob.two {
-	height: 350px;
-	width: 350px;
-	left: 600px; /* Adjust the left value */
-	top: -100px; /* Adjust the top value */
-	transform: rotate(-180deg);
-	animation: transform 30s ease-in-out infinite both alternate, movement_two 60s ease-in-out infinite both;
-	pointer-events: none; /* Add this line to make blobs non-interactive */
-  }
-  
+  background: #0A2463;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.shape-blob {
+  background: #4aa4ff; /* Change color to a nice blue */
+  height: 10%; /* Adjust the relative height */
+  width: 10%; /* Adjust the relative width */
+  border-radius: 30% 50% 20% 40%;
+  animation:
+    transform 20s ease-in-out infinite both alternate,
+    movement_one 40s ease-in-out infinite both;
+  opacity: 0.5;
+  position: absolute;
+  left: 80%; /* Adjust the left value */
+  top: 80%; /* Adjust the top value */
+  pointer-events: none; /* Add this line to make blobs non-interactive */
+}
+
+.shape-blob.one {
+  height: 15%; /* Adjust the relative height */
+  width: 15%; /* Adjust the relative width */
+  left: -5%; /* Adjust the left value */
+  top: -10%; /* Adjust the top value */
+  transform: rotate(-180deg);
+  animation: transform 30s ease-in-out infinite both alternate, movement_two 60s ease-in-out infinite both;
+  pointer-events: none; /* Add this line to make blobs non-interactive */
+}
+
+.shape-blob.two {
+  height: 12%; /* Adjust the relative height */
+  width: 12%; /* Adjust the relative width */
+  left: 60%; /* Adjust the left value */
+  top: -10%; /* Adjust the top value */
+  transform: rotate(-180deg);
+  animation: transform 30s ease-in-out infinite both alternate, movement_two 60s ease-in-out infinite both;
+  pointer-events: none; /* Add this line to make blobs non-interactive */
+}
+
 @keyframes transform {
-    0%,
-    100% { border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%; }
-    20% { border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%; }
-    40% { border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%; }
-    60% { border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%; }
-    80% { border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%; }
+  0%,
+  100% { border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%; }
+  20% { border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%; }
+  40% { border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%; }
+  60% { border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%; }
+  80% { border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%; }
 }
 
 @keyframes movement_one {
-    0%,
-    100% { transform: none; }
-    50% { transform: translate(50%, 20%) rotateY(10deg) scale(1.2); }
+  0%,
+  100% { transform: none; }
+  50% { transform: translate(50%, 20%) rotateY(10deg) scale(1.2); }
 }
 
 @keyframes movement_two {
-    0%,
-    500% { transform: none; }
-    50% { transform: translate(50%, 20%) rotate(-200deg) scale(1.2); }
+  0%,
+  500% { transform: none; }
+  50% { transform: translate(50%, 20%) rotate(-200deg) scale(1.2); }
 }
 
 h1 {
-	/* font-family: 'Playfair Display', serif; */
-	/* font-size: 5em; */
-	/* letter-spacing: 2px; */
-	/* font-weight: 900; */
-	color: white;
-	line-height: .9em;
-	position: relative;
-	z-index: 4;
-	text-shadow: 2px 3px 15px rgba(0,0,0,.15);
+  /* font-family: 'Playfair Display', serif; */
+  /* font-size: 5em; */
+  /* letter-spacing: 2px; */
+  /* font-weight: 900; */
+  color: white;
+  line-height: .9em;
+  position: relative;
+  z-index: 4;
+  text-shadow: 2px 3px 15px rgba(0, 0, 0, .15);
+}
+
+/* Media Queries for adjusting blob size and position on different screen sizes */
+@media screen and (max-width: 768px) {
+  .shape-blob {
+    height: 15%;
+    width: 15%;
+  }
+
+  .shape-blob.one {
+    height: 20%;
+    width: 20%;
+  }
+
+  .shape-blob.two {
+    height: 18%;
+    width: 18%;
+  }
 }
