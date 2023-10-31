@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <div className="to-blue-600 p-4">
+    <div className=" p-4">
       <div className="flex justify-between items-center">
         <div>
           <Link legacyBehavior href="/">
@@ -22,6 +22,30 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
+
+      <style jsx>{`
+        @media (max-width: 640px) {
+          /* Adjust button sizes for smaller screens */
+          .rounded-full {
+            /* Reduce border-radius for a more square look */
+            border-radius: 4px;
+          }
+          .px-4 {
+            /* Reduce horizontal padding */
+            padding-left: 8px;
+            padding-right: 8px;
+          }
+          .py-2 {
+            /* Reduce vertical padding */
+            padding-top: 4px;
+            padding-bottom: 4px;
+          }
+          .text-lg {
+            /* Reduce font size */
+            font-size: 16px;
+          }
+        }
+      `}</style>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Clock from 'react-live-clock';
 import Navbar from './NavBar';
+import page from './page';
 // import '../styles/styles.css';
 
 import { Analytics } from '@vercel/analytics/react';
@@ -14,15 +15,16 @@ const Home = () => {
   };
 
   return (
-<div className={`flex flex-col min-h-screen ${isDarkMode ? 'dark bg-white' : 'bg-gradient-to-b from-blue-400 to-blue-600'}`}>
+  // <Page>
+    <div className={`flex flex-col min-h-screen ${isDarkMode ? 'dark bg-white' : 'bg-gradient-to-b from-blue-400 to-blue-600'}`}>
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <title>Studiously</title>
       <Analytics />
       <Navbar />
       <Clock format={'h:mm:ssa'} style={{ fontSize: '1.5em' }} ticking={true} className='text-white text-center my-2' />
       <div class="shape-blob"></div>
-	<div class="shape-blob one"></div>
-	<div class="shape-blob two"></div>
+      <div class="shape-blob one"></div>
+      <div class="shape-blob two"></div>
       <h1 className={`text-5xl mb-4 font-bold text-center my-6 py-6 ${isDarkMode ? 'text-black' : 'text-white'}`}>
         Welcome to Studiously
       </h1>
@@ -40,6 +42,7 @@ const Home = () => {
         <a href="/termsandconditions" className="text-white hover:underline">Terms and Conditions</a>
       </footer>
     </div>
+  // </Page>
   );
 };
 
