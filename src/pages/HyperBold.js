@@ -15,7 +15,7 @@ const TextWidget = () => {
         let numbers = word.length;
         return (
           <span key={index} className="font-semibold ">
-            <span className="text-violet-600"> {word.slice(0, 2)}</span>
+            <span className="text-indigo-500"> {word.slice(0, 2)}</span>
             <span className="font-normal text-white">{word.slice(2)}</span>&nbsp;
           </span>
         );
