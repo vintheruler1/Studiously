@@ -13,7 +13,6 @@ const App = ({ Component, pageProps }) => {
     <AnimatePresence mode="wait">
       <motion.div key={router.pathname}>
         <Component {...pageProps} />
-
         <motion.div 
         className="slide-in"
         initial={{ scaleY: 0}}

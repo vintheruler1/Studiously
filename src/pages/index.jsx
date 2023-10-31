@@ -39,7 +39,7 @@ const Home = () => {
       <footer className={`text-sm align-middle text-center text-white`}>
         &copy; 2023 Studiously Inc. All Rights Reserved |{' '}
         <a href="/AboutUs" className="text-white hover:underline">About Us</a> |{' '}
-        <a href="/termsandconditions" className="text-white hover:underline">Terms and Conditions</a>
+        <a href="/terms-and-conditions" className="text-white hover:underline">Terms and Conditions</a>
       </footer>
     </div>
   // </Page>

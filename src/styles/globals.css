@@ -62,8 +62,10 @@ body {
 .shape-blob.one {
   height: 15%; 
   width: 15%; 
-  left: -5%; 
-  top: -10%;
+  opacity: 0.5;
+  position: absolute;
+  left: 80%;
+  top: 15%; 
   transform: rotate(-180deg);
   animation: transform 30s ease-in-out infinite both alternate, movement_two 60s ease-in-out infinite both;
   pointer-events: none;
@@ -72,8 +74,10 @@ body {
 .shape-blob.two {
   height: 12%; 
   width: 12%; 
-  left: 60%; 
-  top: -10%; 
+  opacity: 0.5;
+  position: absolute;
+  left: 1%;
+  top: 25%; 
   transform: rotate(-180deg);
   animation: transform 30s ease-in-out infinite both alternate, movement_two 60s ease-in-out infinite both;
   pointer-events: none; 
@@ -143,7 +147,7 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #0040ff;
+  background: #0040ff8a;
   z-index: 10;
   transform-origin: bottom;
 } 
