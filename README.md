@@ -14,6 +14,3 @@
 ## Contributing
 
 Contributions are welcome! Please open an issue or pull request for any changes.
-
-## License
-This project is licensed under the Mozilla Public License 2.0 - see the [LICENSE](https://github.com/vintheruler1/Studiously/blob/main/LICENSE) file for details.
