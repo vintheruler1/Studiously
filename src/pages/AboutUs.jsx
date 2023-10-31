@@ -43,7 +43,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            
+{/*             
             <div className={`w-full sm:w-1/2 lg:w-1/2 xl:w-1/2 p-4`}>
               <div className={`border-2 border-white rounded-lg p-4 shadow-md ${isDarkMode ? 'text-white' : 'text-white'}`}>
                 <p className='text-2xl text-center font-bold py-2 my-2'>
@@ -53,7 +53,7 @@ const Home = () => {
                   Studiously was made by students <a href="https://vinesh.software" className="text-white rounded-full hover:underline text-shadow-md text-center">Vinesh R.</a> and Lydia P. for the 2023 Congressional App Challenge. We are both high school students who wanted to make a productivity app that would help students like us.
                 </p>
               </div>
-            </div>
+            </div> */}
 
             <div className={`w-full sm:w-1/2 lg:w-1/2 xl:w-1/2 p-4`}>
               <div className={`border-2 border-white rounded-lg p-4 shadow-md ${isDarkMode ? 'text-white' : 'text-white'}`}>

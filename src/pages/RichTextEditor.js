@@ -9,8 +9,7 @@ const RichTextEditor = () => {
   const [copySuccess, setCopySuccess] = useState(false);
 
   useEffect(() => {
-    // Automatically save the content in cookies when it changes
-    Cookies.set('editorContent', content, { expires: 7 }); // Store for 7 days
+    Cookies.set('editorContent', content, { expires: 7 }); 
   }, [content]);
 
   const handleChange = (e) => {
@@ -26,7 +25,6 @@ const RichTextEditor = () => {
     document.body.removeChild(textArea);
     setCopySuccess(true);
 
-    // Reset the "Copied" message after 5 seconds
     setTimeout(() => {
       setCopySuccess(false);
     }, 5000);

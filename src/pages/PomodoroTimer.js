@@ -17,7 +17,6 @@ const PomodoroTimer = () => {
     setIsRunning(false);
     if (isBreak) {
       setIsBreak(false);
-      // Restore the previous state
       if (previousState) {
         setMinutes(previousState.minutes);
         setSeconds(previousState.seconds);
@@ -28,7 +27,6 @@ const PomodoroTimer = () => {
 
   const startBreak = () => {
     setIsBreak(true);
-    // Store the previous state before starting the break
     setPreviousState({ minutes, seconds, isRunning });
     setMinutes(5);
     setSeconds(0);
@@ -49,7 +47,6 @@ const PomodoroTimer = () => {
           clearInterval(interval);
           setIsRunning(false);
 
-          // If it was a break, reset the timer
           if (isBreak) {
             setIsBreak(false);
             setMinutes(25);

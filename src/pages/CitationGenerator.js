@@ -6,7 +6,7 @@ class CitationGenerator extends Component {
     super();
     this.state = {
       inputText: '',
-      selectedFormat: 'mla', // Default to MLA format
+      selectedFormat: 'mla', 
       generatedCitation: '',
       author: '',
       date: '',
@@ -22,13 +22,10 @@ class CitationGenerator extends Component {
   };
 
   fetchWebsiteData = () => {
-    // Assuming the input is a URL, and we want to fetch the author and date.
     axios.get(this.state.inputText)
       .then((response) => {
-        // You need to implement the logic to extract the author and date from the website.
-        // For this example, we'll assume the author and date are retrieved and set to state.
-        const author = 'Author Name'; // Extracted author.
-        const date = '2023'; // Extracted date.
+        const author = 'Author Name'; 
+        const date = '2023'; 
 
         this.setState({ author, date });
       })
