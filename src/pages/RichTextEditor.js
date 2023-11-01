@@ -3,13 +3,12 @@ import ContentEditable from 'react-contenteditable';
 import Cookies from 'js-cookie';
 
 const RichTextEditor = () => {
-  const [content, setContent] = useState(
-    Cookies.get('editorContent') || '<p>Start typing here...</p>'
-  );
+  const defaultText = '<p>Start typing here...</p>';
+  const [content, setContent] = useState(Cookies.get('editorContent') || defaultText);
   const [copySuccess, setCopySuccess] = useState(false);
 
   useEffect(() => {
-    Cookies.set('editorContent', content, { expires: 7 }); 
+    Cookies.set('editorContent', content, { expires: 7 });
   }, [content]);
 
   const handleChange = (e) => {
@@ -31,15 +30,18 @@ const RichTextEditor = () => {
   };
 
   const handleDelete = () => {
-    setContent('<p>Start typing here...</p>');
+    setContent(defaultText);
   };
 
   return (
     <div className="bg-blue-500 text-white p-4 rounded-lg shadow-lg">
       <h2 className="text-2xl mb-4 text-center">Rich Text Editor</h2>
+      {content === defaultText && (
+        <div className="placeholder">Start typing here...</div>
+      )}
       <ContentEditable
         className="bg-white text-gray-800 p-2 rounded-lg"
-        html={content}
+        html={content === defaultText ? '' : content}
         onChange={handleChange}
       />
       <div className="flex justify-between mt-4">
