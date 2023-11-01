@@ -15,8 +15,8 @@ const TextWidget = () => {
         let numbers = word.length;
         return (
           <span key={index} className="font-semibold ">
-            <span className="text-indigo-600"> {word.slice(0, 2)}</span>
-            <span className="font-normal text-white">{word.slice(2)}</span>&nbsp;
+            <span className="font-extrabold text-purple-950"> {word.slice(0, 2)}</span>
+            <span className="font-normal text-black">{word.slice(2)}</span>&nbsp;
           </span>
         );
       }
@@ -47,10 +47,10 @@ const TextWidget = () => {
       >
         Format Text
       </button>
-      <div className="border p-4 rounded" style={{ overflow: 'auto', whiteSpace: 'wrap' }}>
-        <div className="font-semibold mx-2 text-white">
+      <div className="border p-4 rounded bg-white" style={{ overflow: 'auto', whiteSpace: 'wrap' }}>
+        <div className="font-semibold mx-2 text-black">
           Formatted Text:
-          <div className="w-max bg-dark-blue text-white p-4 rounded" style={{ whiteSpace: 'wrap', maxHeight: '200px', overflowY: 'scroll' }}>
+          <div className="w-max bg-dark-blue text-black p-4 rounded" style={{ whiteSpace: 'wrap', maxHeight: '200px', overflowY: 'scroll' }}>
             {formattedText}
           </div>
         </div>
